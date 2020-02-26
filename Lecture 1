@@ -1,0 +1,35 @@
+/*Firtsly, we should install Java runtime environment, Java development kit and an ide (like Netbeans and Eclipse)
+Java is an OOP language like C++ */
+
+//The command line (just 1 line)
+/*The command line (>= 1 line/lines)*/
+/** This usage can be use for Javadoc. https://stackoverflow.com/questions/29815636/and-in-java-comments/29815698 */
+
+//1- How to write "Merhaba Dunya" in Java?
+package javaapplication1;
+
+public class JavaApplication1 {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Merhaba Dünya");
+    }  
+}
+
+
+//2- Assigment in Java
+package javaapplication1;
+
+public class JavaApplication1 {
+    public static void main(String[] args) {
+        int x = 10;
+        int y;
+        y = 5;
+        System.out.println("Merhaba " + x + " numara " + y + " yildiz kardesim.");
+        
+        float pi = (float) 3.14;
+        //double pi = 3.14
+        //float daha kucuk yer kaplar
+        String str = "Pi sayisi = ";
+        System.out.println(str + pi);     
+    }  
+}
