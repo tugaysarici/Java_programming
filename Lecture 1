@@ -5,7 +5,7 @@ Java is an OOP language like C++ */
 /*The command line (>= 1 line/lines)*/
 /** This usage can be use for Javadoc. https://stackoverflow.com/questions/29815636/and-in-java-comments/29815698 */
 
-//1- How to write "Merhaba Dunya" in Java?
+#1- How to write "Merhaba Dunya" in Java?
 
 package javaapplication1;
 
