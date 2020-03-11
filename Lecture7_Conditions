@@ -1,6 +1,6 @@
-% Koşullar, if, else if, else (CONDITIONS)
+// Koşullar, if, else if, else (CONDITIONS)
 
-% ==, !=, <, <=, >, >= gibi koşul ifadeleri ile kullanılır.
+// ==, !=, <, <=, >, >= gibi koşul ifadeleri ile kullanılır.
 
 package lecture1;
 
