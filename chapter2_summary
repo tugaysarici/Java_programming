@@ -1,0 +1,81 @@
+public class ComputeArea {
+  public static void main(String[] args) {
+    double radius; // Yarıçap için bellekte yer ayırır
+    double area; // Alan için bellekte yer ayırır
+
+    // Yarıçapa 20 değerini atar
+    radius = 20;
+
+    // Alanı hesaplar
+    area = radius * radius * 3.14159; //
+
+    // Sonucu ekrana yazdırır.
+    System.out.println("The area for the circle of radius " + radius + " is " + area);
+  }
+}
+// ------------------------------------------------------------------------------------
+// SCANNER
+// Konsoldan girdi okumak için Scanner objesi oluşturulur.
+Scanner input = new Scanner(System in);
+
+import java.util.Scanner; // Scanner için gerekli
+public class ComputeAreaWithConsoleInput {
+  public static void main(String[] args) {
+    // Yarıçap değeri bu sefer kullanıcıdan alınır. Geri kalan her şey aynı.
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter a number for radius: ");
+    double radius = input.nextDouble();
+
+    double area = radius * radius * 3.14159;
+    
+    System.out.println("The area for the circle of radius " + radius + " is " + area);
+  } 
+}
+// ------------------------------------------------------------------------------------
+
+import java.util.Scanner; // Scanner için gerekli
+public class ComputeAverage {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    // Tek bir Scanner objesi birden fazla değer alma için kullanılabilir.
+    System.out.print("Enter three numbers: ");
+    double number1 = input.nextDouble();
+    double number2 = input.nextDouble();
+    double number3 = input.nextDouble();
+
+    // Ortalama hesabı
+    double average = (number1 + number2 + number3) / 3;
+
+    // Sonucun yazılması
+    System.out.println("The average of " + number1 + " " + number2
+      + " " + number3 + " is " + average);
+  } 
+}
+// ------------------------------------------------------------------------------------
+
+// IDENTIFIERS: harf / $ / _ ile başlamak zorunda. Sayı ile başlayamaz. Herhangi bir uzunlukta olabilir.
+
+// DEĞİŞKEN TANIMLAMA
+int x;
+double radius;
+char a; // a character variable
+
+// ATAMA DURUMLARI
+x = 1;
+radius = 1.5;
+a = 'G';
+
+// HEM DEĞİŞKEN TANIMLAYIP HEM DE ATAMA
+int x = 1;
+char a = 'G';
+
+// SABİTLERİ İSİMLENDİRME - BAŞINA final ALIR
+final double PI  = 3.14;
+
+// İSİMLENDİRME
+// Değiken ve fonksiyon adların küçük harfle başlasın, ikinci kelimeleri büyük harfle başlasın. (radiusValue)
+// Class isimlendirmesinde hepsi büyük harf ile başlasın. (ComputeArea)
+// Sabitlerde hepsi büyük harf olsun ve kelimeleri _ ile ayır. (MAX_VALUE)
+
+
