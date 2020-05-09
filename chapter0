@@ -1,0 +1,5 @@
+// IMPORTS
+
+// Performans olarak farkları yok.
+java.util.*; // Implicit import
+java.util.JOptionPane; // Explicit Import
