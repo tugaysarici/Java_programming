@@ -154,6 +154,52 @@ message.starsWith(prefix)
   
 // Message, suffix ile bitiyorsa
 message.endsWith(suffix)
-  
-// Belirtilen indexden itibaren 
+
+// Alt stringler elde etme
+// Belirtilen indexden sona kadar olan string'i döndürür
+message.substring(Index)
+	
+// Belirtilen başlangıç indexinden bitiş indexine kadar olan stringi döndürür
+message.substring(beginIndex, endIndex)
+
+// String içerisinde String/Char Bulma
+// ch karakterinin string içerisinde görüldüğü ilk indexi basar. -1 basarsa görülmemiştir
+messaga.indexOf(ch)
+
+// fromIndex'ten sonraki bulunduğu ilk indexi basar
+message.indexOf(ch, fromIndex)
+
+// Yukarıdaki 2 fonksiyon string için de geçerlidir.
+message.indexOf(s1)
+messsage.indexOf(s1, fromIndex)
+
+// ch karakteriin string içerisindeki son görüldüğü indexi basar.
+message.lastIndexOf(ch)
+
+// fromIndex'ten önceki son görüldüğü index
+message.lastIndexOf(ch, fromIndex)
+	
+// Yukarıdaki 2 fonksiyon string için de geçerli.
+message.lastIndexOf(s1)
+message.lastIndexOf(s1, fromIndex)
+
+// Örnek
+int k = s.indexOf(' ');
+String firstName = s.substring(0, k);
+String lastName = s.substring(k + 1);	
 // ------------------------------------------------------------------------------------
+// String ile Number araındaki Dönüşüm (Conversion)
+// String to Number
+int intValue = Integer.parseInt(intString);
+double doubleValue = Double.parseDouble(doubleString);
+
+// Number to String
+String s = number + "";
+
+// Sık kullanılan belirticiler 
+%b boolean(true false)
+%c a character('a')
+%d a decimal integer(200)
+%f a floating point number(45.46000)
+%e a scientific notation(4.556000e+01)
+%s string("Java is so cool")
