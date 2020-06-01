@@ -108,5 +108,61 @@ class EncapsulationDemo {
     }
 }
 //--------------------------------------------------------------------------------
+// Inheritance
+// Sınıfların birbirlerinden türemeleri sonucunda superclass ve subclass kavramları ortaya çıkar.
+public class SuperClassTest {
+   public int intValue;
+   public void testMethod() {
+   }
+   class SubClassTest extends SuperClassTest {
+      public void subMethod() {
+         super.testMethod();
+         super.intValue;
+      }
+   }
+}
+
+//Object Sınıfı
+public class ObjectClassTest {
+    public ObjectClassTest() {
+        super();
+    }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+}
 //--------------------------------------------------------------------------------
+// Abstraction
+// interfaceler kullanılarak 100% soyutlama sağlanır.
+// abstract sınıf:
+public abstract class AbstractClassDemo {
+}
+// abstract bir fonksiyon içeredebilir içermeyedebilir.
+public abstract class AbstractClassDemo {
+    public abstract int calculateSum(int a, int b);
+    public double calculateDivide(int a, int b) {
+        double result = a/b;
+        System.out.println("Result: " + result);
+        return result;
+    }
+}
+// İçeriyorsa abstract sınıftır.
+// Abstract fonksiyonların gövdesi olmamalı, kapsandığı class'da tanımlanırlar.
 //--------------------------------------------------------------------------------
